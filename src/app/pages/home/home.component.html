@@ -1,0 +1,38 @@
+<div class="home-container">
+  <header class="header">
+    <h1>Welcome to Your Checklist App</h1>
+    <p>Organize your day-to-day activities and trips efficiently!</p>
+  </header>
+
+  <div class="feature-cards">
+    <mat-card class="feature-card" (click)="navigateTo('day-to-day')">
+      <mat-card-header>
+        <mat-icon class="feature-icon">check_circle</mat-icon>
+        <mat-card-title>Day-to-Day Tasks</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Manage your daily to-dos with ease.</p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="feature-card" (click)="navigateTo('trips')">
+      <mat-card-header>
+        <mat-icon class="feature-icon">check_circle</mat-icon>
+        <mat-card-title>Trip Checklists</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Plan and track your travel essentials.</p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="feature-card" (click)="navigateTo('settings')">
+      <mat-card-header>
+        <mat-icon class="feature-icon">check_circle</mat-icon>
+        <mat-card-title>Settings</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Customize your checklist experience.</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

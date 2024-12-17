@@ -1,0 +1,49 @@
+.home-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+
+  .header {
+    margin-bottom: 30px;
+
+    h1 {
+      font-size: 2.5rem;
+      color: #3f51b5;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #757575;
+    }
+  }
+
+  .feature-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    .feature-card {
+      width: 300px;
+      padding: 10px;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      mat-card-header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .feature-icon {
+        font-size: 26px;
+        color: #4caf50;
+      }
+    }
+  }
+}
